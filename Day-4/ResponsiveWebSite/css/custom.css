@@ -1,0 +1,157 @@
+@font-face{
+    font-family: menufont;
+    src: url(../fonts/MAGNETOB.TTF);
+}
+@font-face{
+    font-family: customfont;
+    src: url(../fonts/Pacifico.ttf);
+}
+.navbar{
+    border-radius: 0;
+    border:0
+}
+/* NavBar BackGround */
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+.navbar .active{
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+.navbar-brand{
+max-width: 50%;
+/*margin-top: 10px;*/
+}
+
+/*.navbar li { color: #ff0000;font-weight: bold; }*/
+.navbar li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+ }
+.navbar-default .navbar-nav > .active > a{
+    background-color: lightgreen;
+
+    border-color: #000000;
+}
+#menu li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff0000;
+}
+#callus:hover{
+    -webkit-animation-name: callmeanim;
+    -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes callmeanim {
+    from{
+        color: #ffffff;
+    }
+    to{
+        color:#ff0000;
+    }
+}
+body{
+    margin-top: 50px;
+    background: -webkit-linear-gradient(top left ,rgba(255,0,0,0.3),rgba(120,255,100,0.5),rgba(100,120,255,0.7));
+}
+#menu li a:hover {
+    -webkit-animation-name: menuanim;
+    -webkit-animation-duration: 2s;
+
+}
+
+@-webkit-keyframes menuanim {
+    from{
+        transform: scale(1,1);
+        color:#000000;
+    }
+    to{
+        transform: scale(2,2);
+        color: #ffff00;
+    }
+}
+.carousel-caption{
+    margin: 100px;
+    font-family: customfont;
+    color: #ffff00;
+    background: -webkit-radial-gradient(circle ,rgba(255,0,0,0.3),rgba(255,0,0,0.5),rgba(255,0,0,0.7));
+    border-radius: 10%;
+    width: 200px;
+    margin: auto;
+    border-width:12px;
+    -webkit-border-image:url(../images/double_line.png) 12 repeat;
+}
+.carousel{
+    background: -webkit-linear-gradient(top left ,rgba(255,0,0,0.1),rgba(120,255,100,0.3),rgba(100,120,255,0.5));
+}
+h1,h2{
+    font-family: customfont;
+}
+
+#imagination{
+
+    -webkit-transition: 2s ease-in-out;
+}
+#imagination:hover{
+    background-color: aqua;
+    -webkit-transform: rotate(360deg) scale(2);
+
+}
+body,p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.video-container {
+    position: relative;
+    /*bottom: 0%;
+    left: 0%;*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.description .inner {
+    font-size: 1em;
+    width: 45%;
+    margin: 0 auto;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.section {
+    /*width: 29%;*/
+    /*float: left;*/
+    margin: 2% 2%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    -webkit-box-shadow: 13px 13px 13px gray;
+    padding: 2px;
+    background: -webkit-linear-gradient(top left,rgba(255,0,0,0.1),rgba(0,255,0,0.3), rgba(0,0,255,0.5));
+}
+.section img,h1,p{
+padding: 10px;
+text-align: center;
+    margin: auto;
+}
+/*
+.section img{
+    -webkit-border-radius: 50%;
+}*/
